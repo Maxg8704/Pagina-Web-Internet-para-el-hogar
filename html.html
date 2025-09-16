@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conectar.Net - Internet y Seguridad</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Conectar.Net</div>
+    <nav>
+      <a href="#planes">Planes</a>
+      <a href="#quienes">Quienes Somos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Un servicio pensado para tu hogar</h1>
+      <p>La mejor opcion de conecttvidad para su tranquilidad.</p>
+      <button class="btn hero-btn" data-modal="planes" type="button">Ver Planes</button>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section id="planes" class="planes">
+    <h2>Nuestros Planes</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1692188071339-2825a8a997f1?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Familia viendo película" />
+        <h3>Plan Streaming</h3>
+        <p>Disfrutá de tus películas y series sin interrupciones.</p>
+        <button class="btn" data-modal="streaming" type="button">Ver Detalles</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Chico jugando en PC gamer" />
+        <h3>Plan Gaming</h3>
+        <p>Máxima velocidad y baja latencia para gamers exigentes.</p>
+        <button class="btn" data-modal="gaming" type="button">Ver Detalles</button>
+      </div>
+
+      <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1668383778557-d71c562fdb4b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Reunión laboral en laptop" />
+        <h3>Plan Trabajo</h3>
+        <p>Conexión estable para home office y reuniones online.</p>
+        <button class="btn" data-modal="trabajo" type="button">Ver Detalles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIENES SOMOS -->
+  <section id="quienes" class="quienes">
+    <h2>Quiénes Somos</h2>
+    <p>
+      Conectar.Net es una empresa ubicada en Añatuya, Santiago del Estero.  
+      Nacimos con el propósito de brindar un servicio de internet y seguridad confiable, 
+      garantizando siempre la satisfacción del cliente.
+    </p>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <input name="name" type="text" placeholder="Tu nombre" required />
+      <input name="email" type="email" placeholder="Tu correo" required />
+      <textarea name="message" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="close" aria-label="Cerrar">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+
+      <form id="modal-form" class="modal-form">
+        <input name="m-name" type="text" placeholder="Tu nombre" required />
+        <input name="m-email" type="email" placeholder="Tu correo" required />
+        <textarea name="m-msg" placeholder="Consulta sobre este servicio" required></textarea>
+        <button type="submit" class="btn">Enviar Consulta</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5493812345678" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Conectar.Net - Todos los derechos reservados.</p>
+    <p>Disegn by Maxi Gimenez</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
